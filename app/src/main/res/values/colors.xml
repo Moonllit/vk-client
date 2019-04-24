@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e1d1d</color>
+    <color name="colorPrimaryDark">#e2000000</color>
+    <color name="colorPrimaryLight">#6668d0</color>
+    <color name="colorSecondary">#82838b</color>
+    <color name="colorSecondaryDark">#49599a</color>
+    <color name="colorSecondaryLight">#aab6fe</color>
+    <color name="colorPrimaryText">#ffffff</color>
+    <color name="colorSecondaryText">#000000</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorVkLogo">#4680C2</color>
+</resources>

@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.support.android.vkclient"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "API_VERSION", '"5.92"'
+        buildConfigField "String", "VK_APP_ID", '"6784076"'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+    buildToolsVersion '28.0.3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // Support libraries
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+    implementation 'com.google.android.material:material:1.1.0-alpha04'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha03'
+    implementation 'com.google.android.material:material:1.1.0-alpha04'
+    // Architecture components
+    implementation 'androidx.room:room-runtime:2.1.0-alpha04'
+    annotationProcessor 'androidx.room:room-compiler:2.1.0-alpha04'
+    implementation 'androidx.room:room-rxjava2:2.1.0-alpha04'
+    implementation 'com.google.dagger:dagger:2.19'
+    implementation 'com.google.dagger:dagger-android-support:2.19'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.19'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.19'
+    
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    // Dependencies for tests
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.2-alpha02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha02'
+    // Network connection
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'joda-time:joda-time:2.9.9'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'jp.wasabeef:glide-transformations:3.1.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+}

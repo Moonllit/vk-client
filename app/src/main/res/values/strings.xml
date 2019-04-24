@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">КлиентVK</string>
+    <string name="profile_header_friends_title">Друзья</string>
+    <string name="profile_header_albums_title">Альбомы</string>
+    <string name="profile_header_all_photos_title">Все фото</string>
+    <string name="profile_header_audio_title">Аудио</string>
+    <string name="profile_section_subscribers_title">Подписчики</string>
+    <string name="profile_section_video_title">Видео</string>
+    <string name="user_online">В сети</string>
+    <string name="user_last_seen">Был(а) в сети\u0020</string>
+    <string name="gender">Пол:\u0020</string>
+    <string name="birth_date">День рождения:\u0020</string>
+    <string name="profile_header_photos">Фотографии</string>
+    <string name="home_page">Домашняя страница</string>
+    <string name="refresh">Обновить</string>
+    <string name="log_in">Войти в вк</string>
+    <string name="user_avatar">User avatar</string>
+    <integer name="com_vk_sdk_AppId">6784076</integer>
+</resources>
